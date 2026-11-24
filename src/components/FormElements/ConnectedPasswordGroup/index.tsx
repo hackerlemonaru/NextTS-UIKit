@@ -33,3 +33,20 @@ StyledInput.defaultProps = {
   color: 'text',
   borderWidth: 1,
   bg: 'background',
+  borderColor: 'muted',
+}
+
+type ConnectedPasswordGroupProps = {
+  label: string
+  name: string
+}
+
+const ConnectedPasswordGroup: React.FC<ConnectedPasswordGroupProps> = ({
+  label,
+  name,
+}) => {
+  const [field, meta] = useField(name)
+
+  return <div>{label}</div>
+}
+
