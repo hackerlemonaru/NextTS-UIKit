@@ -50,3 +50,4 @@ const ConnectedPasswordGroup: React.FC<ConnectedPasswordGroupProps> = ({
   return <div>{label}</div>
 }
 
+export default ConnectedPasswordGroup
